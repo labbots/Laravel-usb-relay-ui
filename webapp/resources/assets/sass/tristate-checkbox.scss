@@ -1,0 +1,165 @@
+.tristate-checkbox-container {
+   position: absolute;
+   margin : 0px auto;
+   width:100%;
+   height:75px;
+  .tristate-switch {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 125px;
+      background-color: #1E1E20;
+      border-radius: 5px;
+      -webkit-box-shadow: inset 1px 1px 10px 2pxrgba(0,0,0,0.75);
+      -moz-box-shadow: inset 1px 1px 10px 2px rgba(0,0,0,0.75);
+      box-shadow: inset 1px 1px 10px 2px rgba(0,0,0,0.75);
+    }
+    span.switch-led{
+      display:inline-block;
+      width: 20px;
+        position: relative;
+
+        &:after{
+          top:-2em;
+          left: .5em;
+        }
+      &.switch-led-green{
+        top: -2em;
+        left: -5em;
+      }
+      &.switch-led-red{
+        bottom: 2em;
+        left: 2em;
+      }
+      .switch-led-border{
+        display:block;
+        .switch-led-light{
+            display: block;
+          .switch-led-glow{
+            display: block;
+          }
+        }
+      }
+    }
+    input {
+      &#maintoggle {
+        position: absolute;
+        display : inline-block;
+        left: -9999px;
+        &:not(:checked) {
+          &~ label {
+            &.indicator {
+              margin-left: -58px;
+            }
+          }
+        }
+        &:indeterminate {
+          &~ label {
+            &.indicator {
+              margin-left: -100px;
+            }
+          }
+        }
+        &:checked {
+          &~ label {
+            &.indicator {
+              margin-left: -143px;
+            }
+          }
+        }
+      }
+    }
+    label {
+      pointer-events: none;
+      &.indicator {
+        background-color: red;
+        height: 30px;
+        cursor: pointer;
+        pointer-events: none;
+        width: 30px;
+        display: inline-block;
+        position: absolute;
+        margin: 5px;
+        margin-left: -80px;
+        background-image: -webkit-radial-gradient( 50% 0%, 8% 50%, hsla(0,0%,100%,.5)0%, hsla(0,0%,100%,0) 100%), -webkit-radial-gradient( 50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%), -webkit-radial-gradient( 0% 50%, 50% 7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), -webkit-radial-gradient( 100% 50%, 50% 5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%, 0%,0) 0%, hsla(0,0%, 0%,0) 3%, hsla(0,0%, 0%,.1) 3.5%), -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 6%, hsla(0,0%,100%,.1) 7.5%), -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%), -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+        border-radius: 50%;
+        border: 2px solid #222;
+        transition: all 0.5s;
+      }
+    }
+    span {
+      &.state {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        position: relative;
+        left: -22px;
+        &[data-state="on"] {
+        }
+        &[data-state="neutral"] {
+        }
+        &[data-state="off"] {
+        }
+      }
+    }
+  }
+}
+.tristate-checkbox-container .tristate-switch span.switch-led:after {
+left: 0px;
+top: -20px;
+}
+.tristate-checkbox-container .tristate-switch span.switch-led .switch-led-border { border: 1px solid black;
+border-radius: 50%;
+}
+tristate-checkbox-container .tristate-switch span.switch-led .switch-led-border .switch-led-light {background: rgb(0, 161, 75);
+border: 1px solid rgb(0, 104, 56);
+border-radius: 50%;
+-webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) inset;
+}
+
+.tristate-checkbox-container .tristate-switch span.switch-led .switch-led-border .switch-led-light .switch-led-glow
+{
+width: 15px;
+height: 15px;
+position: relative;
+border-radius: 50%;
+}
+.tristate-checkbox-container .tristate-switch span.switch-led .switch-led-border .switch-led-light .switch-led-glow:before {
+content: '';
+display: block;
+width: 10px;
+height: 10px;
+position: absolute;
+top: 2px;
+left: 2px;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 50%;
+-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.75);
+-moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.75);
+box-shadow: 0 0 1px rgba(255, 255, 255, 0.75);
+}
+
+.tristate-checkbox-container .tristate-switch span.switch-led.switch-led-green {
+top: -2px;
+left: -40px;
+}
+.tristate-checkbox-container .tristate-switch span.switch-led.switch-led-red {
+bottom: 0px;
+left: 0px;
+}
+.tristate-checkbox-container .tristate-switch.off .switch-led.switch-led-red{
+    -webkit-box-shadow: 0 0 3em rgb(237, 28, 36);
+    -moz-box-shadow: 0 0 3em rgb(237, 28, 36);
+   box-shadow: 0 0 3em rgb(237, 28, 36);
+  }
+
+  .tristate-checkbox-container .tristate-switch.on .switch-led.switch-led-green{
+    -webkit-box-shadow: 0 0 3em rgb(0, 161, 75);
+-moz-box-shadow: 0 0 3em rgb(0, 161, 75);
+box-shadow: 0 0 3em rgb(0, 161, 75);
+  }

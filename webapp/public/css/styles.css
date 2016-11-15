@@ -1,0 +1,804 @@
+/*!
+ * Start Bootstrap - SB Admin 2 Bootstrap Admin Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    background-color: #f8f8f8;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+.navbar-top-links {
+    margin-right: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages, .navbar-top-links .dropdown-tasks, .navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar ul li.active > a {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .nav-second-level li, .sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+}
+
+.sidebar .nav-third-level li a {
+    padding-left: 52px;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        margin-top: 51px;
+    }
+    .navbar-top-links .dropdown-messages, .navbar-top-links .dropdown-tasks, .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-info.btn-outline:hover, .btn-warning.btn-outline:hover, .btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+.chat {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #999;
+}
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 60px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon {
+    margin-right: 5px;
+}
+
+.chat-panel .panel-body {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.login-panel {
+    margin-top: 25%;
+}
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.show-grid [class^=col-] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #eee!important;
+}
+
+.show-grid {
+    margin: 15px 0;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.medium {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+canvas {
+    max-width: 100% !important;
+    max-width: 400px;
+    height: auto !important;
+}
+
+canvas.round {
+    max-width: 100% !important;
+    max-width: 350px;
+    height: auto !important;
+}
+
+.margin-inverse-top {
+    margin-top: -44px;
+}
+
+.codeWrapper {
+    background-color: #020111;
+    color: #38f527;
+}
+
+.visual {
+    opacity: .2;
+}
+
+.visual>i {
+    margin-left: -15px;
+}
+
+.visual-box {
+    padding-top: 22px;
+}
+
+.purple {
+    background-color: #8E44AD;
+    border-color: #8E44AD;
+}
+
+.purple>.panel-heading {
+    color: #fff;
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+footer.site-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #99979c;
+    text-align: center;
+    background-color: #2a2730;
+}
+
+section.section-relay {
+    background: #1E1E20;
+    padding:35px 0px 35px 0px;
+}
+
+section.page-section {
+    padding:35px 0px 35px 0px;
+    min-height: 720px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.absolute-bottom-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Switch css starts here */
+
+
+
+.switch {
+    display: inline-block;
+    margin: 10em 6em;
+    position: relative;
+    border-radius: 3.5em;
+    -webkit-box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.2);
+}
+
+span.switch-title {
+    position: absolute;
+    bottom:-80px;
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0.1em rgba(0,0,0,0.7);
+    width: 8em;
+    left:-2em;
+
+}
+
+.tristate-checkbox-title{
+    display:block;
+    padding-top: 55px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    
+}
+.tristate-checkbox-title p{
+        font-size: 12px;
+        color: #666;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 0.1em rgba(0,0,0,0.7);
+    }
+
+.switch-title p {
+    margin:-5px auto;
+}
+.switch label {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch span {
+    display: block;
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    -ms-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    transition: top 0.2s;
+}
+
+.switch-border1 {
+    border: 0.1em solid #000;
+    border-radius: 3.5em;
+    -webkit-box-shadow: 0 0.2em rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0 0.2em rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.2em rgba(255, 255, 255, 0.2);
+}
+
+.switch-border2 {
+    width: 6.6em;
+    height: 12.6em;
+    position: relative;
+    border: 0.1em solid #323232;
+    background-image: -webkit-gradient(linear, left top, right top, from(#2D2D2D), color-stop(0.5, #4B4B4B), to(#2D2D2D));
+    background-image: -webkit-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: -moz-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: -ms-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: -o-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: linear-gradient(to right, #2D2D2D, #4B4B4B, #2D2D2D);
+    border-radius: 3.4em;
+}
+
+.switch-border2:before, .switch-border2:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: .3;
+    border-radius: 3.4em;
+}
+
+.switch-border2:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(#000, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(#000, rgba(0, 0, 0, 0));
+    background: -ms-linear-gradient(#000, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(#000, rgba(0, 0, 0, 0));
+    background: linear-gradient(#000, rgba(0, 0, 0, 0));
+}
+
+.switch-border2:after {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), #000);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), #000);
+    background: -ms-linear-gradient(rgba(0, 0, 0, 0), #000);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), #000);
+    background: linear-gradient(rgba(0, 0, 0, 0), #000);
+}
+
+.switch-top {
+    width: 100%;
+    height: 84%;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    z-index: 1;
+    background-image: -webkit-gradient(linear, left top, right top, from(#2D2D2D), color-stop(0.5, #4B4B4B), to(#2D2D2D));
+    background-image: -webkit-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: -moz-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: -ms-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: -o-linear-gradient(left, #2D2D2D, #4B4B4B, #2D2D2D);
+    background-image: linear-gradient(to right, #2D2D2D, #4B4B4B, #2D2D2D);
+    border-radius: 3.4em;
+}
+
+.switch-shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 3.4em;
+    -webkit-box-shadow: 0 0 2em black inset;
+    -moz-box-shadow: 0 0 2em black inset;
+    box-shadow: 0 0 2em black inset;
+}
+
+.switch-handle-left, .switch-handle-right {
+    content: '';
+    display: block;
+    width: 3.6em;
+    height: 0;
+    position: absolute;
+    top: 6.6em;
+    z-index: 2;
+    border-bottom: 4.5em solid #111;
+    border-left: 0.7em solid transparent;
+    border-right: 0.7em solid transparent;
+    border-radius: 0;
+}
+
+.switch-handle-left {
+    left: 0.8em;
+}
+
+.switch-handle-right {
+    right: 0.8em;
+}
+
+.switch-handle {
+    width: 3.6em;
+    height: 4.5em;
+    position: absolute;
+    top: 6.6em;
+    left: 1.5em;
+    z-index: 3;
+    background: #333;
+    background-image: -webkit-gradient(linear, left top, right top, from(#111), color-stop(0.4, #777), color-stop(0.5, #888), color-stop(0.6, #777), to(#111));
+    background-image: -webkit-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: -moz-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: -ms-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: -o-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: linear-gradient(to right, #111, #777 40%, #888, #777 60%, #111);
+    border-radius: 0;
+}
+
+.switch-handle-top {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    top: 8.5em;
+    left: 0.8em;
+    z-index: 4;
+    background-color: #555;
+    background-image: -webkit-gradient(linear, left top, right top, from(#5F5F5F), to(#878787));
+    background-image: -webkit-linear-gradient(left, #5F5F5F, #878787);
+    background-image: -moz-linear-gradient(left, #5F5F5F, #878787);
+    background-image: -ms-linear-gradient(left, #5F5F5F, #878787);
+    background-image: -o-linear-gradient(left, #5F5F5F, #878787);
+    background-image: linear-gradient(to right, #5F5F5F, #878787);
+    border-top: 0.2em solid #AEB2B3;
+    border-radius: 2.5em;
+}
+
+.switch-handle-bottom {
+    width: 3.6em;
+    height: 3.6em;
+    position: absolute;
+    top: 4.7em;
+    left: 1.5em;
+    z-index: 3;
+    background: #333;
+    background-image: -webkit-gradient(linear, left top, right top, from(#111), color-stop(0.4, #777), color-stop(0.5, #888), color-stop(0.6, #777), to(#111));
+    background-image: -webkit-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: -moz-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: -ms-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: -o-linear-gradient(left, #111, #777 40%, #888, #777 60%, #111);
+    background-image: linear-gradient(to right, #111, #777 40%, #888, #777 60%, #111);
+    border-top: 0.2em solid #141414;
+    border-radius: 1.8em;
+}
+
+.switch-handle-base {
+    width: 4.2em;
+    height: 4.2em;
+    position: absolute;
+    top: 3.8em;
+    left: 1.2em;
+    z-index: 2;
+    border-top: 0.2em solid rgba(255, 255, 255, 0.35);
+    border-radius: 2.1em;
+    -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+    -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+}
+
+.switch-led {
+    position: absolute;
+    left: 2em;
+    border-radius: 1.4em;
+}
+
+.switch-led-border {
+    border: 0.2em solid black;
+    border-radius: 1.3em;
+}
+
+.switch-led-light {
+    border-radius: 1.1em;
+    -webkit-box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+}
+
+.switch-led-glow {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    border-radius: 1em;
+}
+
+.switch-led-glow:before {
+    content: '';
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    position: absolute;
+    top: 0.3em;
+    left: 0.7em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0 0 1em rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0 0 1em rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.75);
+}
+
+.switch-led-glow:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    border: 1em solid #fff;
+    border-color: transparent #fff transparent #fff;
+    border-radius: 1em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.switch-led:after {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    color: #666;
+    font-family: arial, verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0.1em rgba(0, 0, 0, 0.7);
+}
+
+.switch-led-green:after {
+    content: 'ON';
+    top: -1.8em;
+}
+
+.switch-led-red:after {
+    content: 'OFF';
+    bottom: -1.8em;
+}
+
+.switch-led-green {
+    top: -5em;
+    border-top: 0.1em solid rgba(0, 161, 75, 0.5);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.25);
+}
+
+.switch-led-green .switch-led-light {
+    background: rgb(0, 161, 75);
+    border: 0.1em solid rgb(0, 104, 56);
+}
+
+.switch-led-red {
+    bottom: -5em;
+    border-top: 0.1em solid rgba(237, 28, 36, 0.2);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.25);
+
+}
+
+.switch-led-red .switch-led-light {
+    background: rgb(237, 28, 36);
+    border: 0.1em solid rgb(161, 30, 45);
+}
+
+.switch-led-red .switch-led-glow {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    filter: alpha(opacity=30);
+}
+
+
+/* Switch on */
+
+.switch input:checked~.switch-handle-left, .switch input:checked~.switch-handle-right {
+    top: 1.5em;
+    border-bottom: 0;
+    border-top: 4.5em solid #111;
+}
+
+.switch input:checked~.switch-handle {
+    top: 1.5em;
+}
+
+.switch input:checked~.switch-handle-top {
+    top: -1em;
+    border-top: 0;
+    border-bottom: 0.2em solid #AEB2B3;
+}
+
+.switch input:checked~.switch-handle-bottom {
+    top: 4.2em;
+    border-top: 0;
+    border-bottom: 0.2em solid #141414;
+}
+
+.switch input:checked~.switch-handle-base {
+    top: 4.5em;
+    border-top: 0;
+    border-bottom: 0.2em solid rgba(255, 255, 255, 0.35);
+}
+
+.switch input:checked~.switch-led-green {
+    -webkit-box-shadow: 0 0 3em rgb(0, 161, 75);
+    -moz-box-shadow: 0 0 3em rgb(0, 161, 75);
+    box-shadow: 0 0 3em rgb(0, 161, 75);
+}
+
+.switch input:checked~.switch-led-green .switch-led-glow {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    filter: alpha(opacity=40);
+}
+
+.switch input:checked~.switch-led-red {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.switch input:checked~.switch-led-red .switch-led-glow {
+    background: rgba(255, 255, 255, 0);
+    filter: alpha(opacity=0);
+}
+/*# sourceMappingURL=styles.css.map */

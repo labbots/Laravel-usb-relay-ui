@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext);
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important; }
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.0; }
+
+/*
+ * FIX - Firefox has some awkward fieldset styling involving width that interferes
+ * with the responsive table
+*/
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell; } }
+.fa-btn {
+  margin-right: 6px; }
+
+table {
+  table-layout: fixed;
+  word-wrap: break-word; }
+
+h1, h2, h3, h4, h5 {
+  color: #337ab7;
+  font-weight: bold; }
+
+.modal-content-text {
+  word-wrap: break-word; }
+
+.two-factor-content {
+  padding-left: 20px;
+  padding-bottom: 20px; }
+  .two-factor-content .title {
+    font-size: 17px;
+    font-weight: bold; }
+  .two-factor-content ul {
+    line-height: 2; }
+
+.processing {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  width: 250px !important;
+  height: 80px !important;
+  margin-left: -125px !important;
+  margin-top: -15px !important;
+  padding: 15px 0 30px 0 !important;
+  border: 1px solid #ddd !important;
+  text-align: center;
+  color: #444 !important;
+  font-size: 14px !important;
+  background: url("../images/loading_bar.gif") no-repeat center 38px #fff !important;
+  box-shadow: 2px 2px 5px #444 !important;
+  -moz-box-shadow: 2px 2px 5px #444 !important;
+  -webkit-box-shadow: 2px 2px 5px #444 !important;
+  z-index: 9999; }
+
+/*# sourceMappingURL=app.css.map */
